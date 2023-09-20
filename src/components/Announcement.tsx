@@ -29,7 +29,7 @@ const Announcement = () => {
       <Box p={2}>
       <Container maxWidth="md">
         <p><Link to="/">&lt; 戻る</Link></p>
-        <Typography variant="h4" gutterBottom>
+        <Typography variant="h5" gutterBottom>
           入力フォーム
         </Typography>
         <div className="input-container">
@@ -81,9 +81,17 @@ const Announcement = () => {
           <DynamicForm forms={nextPresenters} setForms={setNextPresenters} />
         </div>
 
+        <Typography variant="h5" gutterBottom>
+          メールの件名
+        </Typography>
+        <Card variant="outlined">
+          <CardContent>
+            [情報数理研究室]ゼミのお知らせ({ seminarDate })
+          </CardContent>
+        </Card>
 
-        <Typography variant="h4" gutterBottom>
-          メールの文面
+        <Typography variant="h5" gutterBottom>
+          メールの本文
         </Typography>
         <Card variant="outlined">
           <CardContent>
