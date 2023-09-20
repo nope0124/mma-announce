@@ -14,7 +14,7 @@ const Home = () => {
       alignItems="center"
       justifyContent="center"
       height="30vh"
-      width="10%"
+      width="150px"
       margin="auto"
     >
       <img
